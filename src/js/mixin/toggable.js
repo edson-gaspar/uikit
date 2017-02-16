@@ -141,7 +141,7 @@ export default {
             el.find('[autofocus]:visible').focus();
 
             this.updateAria(el);
-            UIkit.update(null, el);
+            /* var UIkit not passed to module -> UIkit.update(null, el); */
         },
 
         _toggleImmediate(el, show) {
